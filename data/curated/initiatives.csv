@@ -1,0 +1,11 @@
+initiative_id,name,type,business_unit,go_live,licensed_users,planned_annual_benefit_usd,sponsor_name,sponsor_role,owner_name,owner_role
+INIT-01,HR Policy Copilot,Copilot,People & HR,2026-03-01,1500.0,300000.0,Priya Raman,Chief People Officer,Daniel Okafor,HR Digital Product Owner
+INIT-02,Customer Service Chatbot,Conversational bot,Customer Operations,2025-11-01,800.0,420000.0,Marcus Lindqvist,VP Customer Operations,Aisha Bello,Contact Centre Automation Lead
+INIT-03,Sales Forecasting Model,Predictive model,Sales,2026-01-15,200.0,200000.0,Elena Petrova,Chief Revenue Officer,Tom Achterberg,Sales Analytics Manager
+INIT-04,Invoice Document AI,Document AI,Finance,2026-02-01,120.0,210000.0,Robert Chen,Chief Financial Officer,Sofia Marquez,Accounts Payable Process Owner
+INIT-05,Developer Code Assistant,Copilot,Technology,2026-05-01,600.0,250000.0,Hannah Becker,Chief Technology Officer,Raj Malhotra,Engineering Productivity Lead
+INIT-06,Claims Triage Bot,Conversational bot,Insurance Operations,2026-04-01,400.0,240000.0,Grace Mwangi,Director of Claims,Lucas Ferreira,Claims Automation Product Owner
+INIT-07,Churn Prediction Model,Predictive model,Marketing,2026-06-01,150.0,300000.0,Oliver Grant,Chief Marketing Officer,Mei Tanaka,Customer Analytics Lead
+INIT-08,Contract Review Copilot,Copilot,Legal,2026-07-01,250.0,200000.0,Isabelle Dubois,General Counsel,Kwame Asante,Legal Operations Manager
+INIT-09,IT Helpdesk Voice Bot,Conversational bot,Technology,2026-08-01,1200.0,260000.0,Hannah Becker,Chief Technology Officer,Noah Williams,Service Desk Manager
+INIT-10,Marketing Content Generator,Generative AI,Marketing,2025-09-01,300.0,,Oliver Grant,Chief Marketing Officer,Chloe Martin,Content Operations Lead

@@ -1,0 +1,32 @@
+initiative_id,week_start,metric,value
+INIT-01,2026-10-26,WAU,980
+INIT-01,2026-11-02,WAU,1010
+INIT-01,2026-11-09,WAU,1050
+INIT-02,2026-10-26,WAU,590
+INIT-02,2026-11-02,WAU,610
+INIT-02,2026-11-09,WAU,640
+INIT-02,2026-11-09,WAU,640
+init-03 ,2026-10-26,WAU,84
+init-03 ,2026-11-02,WAU,88
+init-03 ,2026-11-09,WAU,90
+INIT-04,26/10/2026,weekly_active_users,70
+INIT-04,02/11/2026,weekly_active_users,72
+INIT-04,09/11/2026,weekly_active_users,66
+INIT-05,26/10/2026,weekly_active_users,380
+INIT-05,02/11/2026,weekly_active_users,402
+INIT-05,09/11/2026,weekly_active_users,4350
+INIT-05,26/10/2026,MAU,520
+INIT-06,26/10/2026,weekly_active_users,120
+INIT-06,02/11/2026,weekly_active_users,104
+INIT-06,09/11/2026,weekly_active_users,88
+INIT-07,26 Oct 2026,Active Users (7d),95
+INIT-07,2 Nov 2026,Active Users (7d),98
+INIT-07,9 Nov 2026,Active Users (7d),100
+INIT-08,2026-10-26,Active Users (7d),160
+INIT-08,2026-11-02,Active Users (7d),170
+INIT-08,2026-11-09,Active Users (7d),175
+INIT-09,2026-10-26,Active Users (7d),300
+INIT-09,2026-11-09,Active Users (7d),420
+INIT-10,2026-10-26,Active Users (7d),150
+INIT-10,2026-11-02,Active Users (7d),138
+INIT-10,2026-11-09,Active Users (7d),129

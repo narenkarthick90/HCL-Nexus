@@ -1,0 +1,139 @@
+- initiative_id: INIT-01
+  file: INIT-01_hr_policy_copilot_charter.pdf
+  format: pdf
+  sections:
+  - Initiative overview
+  - Scope
+  - In scope
+  - Out of scope
+  - Benefit hypothesis
+  - KPIs and measurement
+  - Risks and mitigations
+  - Governance
+  - Dependencies
+  - Status notes
+- initiative_id: INIT-02
+  file: INIT-02_customer_service_chatbot_charter.docx
+  format: docx
+  sections:
+  - Initiative overview
+  - Scope
+  - In scope
+  - Out of scope
+  - Benefit hypothesis
+  - KPIs and measurement
+  - Risks and mitigations
+  - Governance
+  - Dependencies
+  - Status notes
+- initiative_id: INIT-03
+  file: INIT-03_sales_forecasting_model_charter.md
+  format: md
+  sections:
+  - Initiative overview
+  - Scope
+  - In scope
+  - Out of scope
+  - Benefit hypothesis
+  - KPIs and measurement
+  - Risks and mitigations
+  - Governance
+  - Dependencies
+  - Status notes
+- initiative_id: INIT-04
+  file: INIT-04_invoice_document_ai_charter.html
+  format: html
+  sections:
+  - Initiative overview
+  - Scope
+  - In scope
+  - Out of scope
+  - Benefit hypothesis
+  - KPIs and measurement
+  - Risks and mitigations
+  - Governance
+  - Dependencies
+  - Status notes
+- initiative_id: INIT-05
+  file: INIT-05_developer_code_assistant_charter.pdf
+  format: pdf
+  sections:
+  - Initiative overview
+  - Scope
+  - In scope
+  - Out of scope
+  - Benefit hypothesis
+  - KPIs and measurement
+  - Risks and mitigations
+  - Governance
+  - Dependencies
+  - Status notes
+- initiative_id: INIT-06
+  file: INIT-06_claims_triage_bot_charter.docx
+  format: docx
+  sections:
+  - Initiative overview
+  - Scope
+  - In scope
+  - Out of scope
+  - Benefit hypothesis
+  - KPIs and measurement
+  - Risks and mitigations
+  - Governance
+  - Dependencies
+  - Status notes
+- initiative_id: INIT-07
+  file: INIT-07_churn_prediction_model_charter.md
+  format: md
+  sections:
+  - Initiative overview
+  - Scope
+  - In scope
+  - Out of scope
+  - Benefit hypothesis
+  - KPIs and measurement
+  - Risks and mitigations
+  - Governance
+  - Dependencies
+  - Status notes
+- initiative_id: INIT-08
+  file: INIT-08_contract_review_copilot_charter.html
+  format: html
+  sections:
+  - Initiative overview
+  - Scope
+  - In scope
+  - Out of scope
+  - Benefit hypothesis
+  - KPIs and measurement
+  - Risks and mitigations
+  - Governance
+  - Dependencies
+  - Status notes
+- initiative_id: INIT-09
+  file: INIT-09_it_helpdesk_voice_bot_charter.pdf
+  format: pdf
+  sections:
+  - Initiative overview
+  - Scope
+  - In scope
+  - Out of scope
+  - Benefit hypothesis
+  - KPIs and measurement
+  - Risks and mitigations
+  - Governance
+  - Dependencies
+  - Status notes
+- initiative_id: INIT-10
+  file: INIT-10_marketing_content_generator_charter.md
+  format: md
+  sections:
+  - Initiative overview
+  - Scope
+  - In scope
+  - Out of scope
+  - Benefit hypothesis
+  - KPIs and measurement
+  - Governance
+  - Dependencies
+  - Status notes

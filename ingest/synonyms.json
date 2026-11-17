@@ -1,0 +1,19 @@
+{
+  "charters": [
+    "risk, risks, issue, issues, concern, concerns, threat",
+    "mitigation, mitigations, remediation, countermeasure",
+    "KPI, KPIs, metric, metrics, measure, success measure",
+    "benefit, benefits, value, savings, return",
+    "objective, goal, purpose, aim",
+    "sponsor, executive sponsor, business sponsor",
+    "owner, product owner, initiative owner",
+    "scope, in scope, out of scope, boundaries",
+    "dependency, dependencies, prerequisite, prerequisites",
+    "WAU, weekly active users, active users",
+    "ROI, return on investment",
+    "copilot, assistant",
+    "chatbot, bot, conversational bot, virtual agent",
+    "claims bot, claims triage bot",
+    "helpdesk, service desk, IT support"
+  ]
+}

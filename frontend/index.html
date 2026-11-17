@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nimbus Value Intelligence</title>
+<meta name="description" content="Ask about the Nimbus Group AI portfolio. Every number comes from the governed scorecard; narrative from initiative charters.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='17' width='6' height='12' rx='2' fill='%232f6fde'/%3E%3Crect x='13' y='10' width='6' height='19' rx='2' fill='%232f6fde'/%3E%3Crect x='23' y='3' width='6' height='26' rx='2' fill='%232f6fde'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="logo" aria-hidden="true"></span>
+    <div>
+      <h1>Nimbus Value Intelligence</h1>
+      <p class="sub">AI portfolio assistant · every number from the governed scorecard, every statement sourced</p>
+    </div>
+  </div>
+  <nav class="tabs" role="tablist" aria-label="Views">
+    <button role="tab" class="tab" data-view="ask" aria-selected="true">Ask</button>
+    <button role="tab" class="tab" data-view="scorecard" aria-selected="false">Scorecard</button>
+    <button role="tab" class="tab" data-view="report" aria-selected="false">Weekly report</button>
+    <button role="tab" class="tab" data-view="quality" aria-selected="false">Data quality</button>
+    <button role="tab" class="tab" data-view="charters" aria-selected="false">Charters</button>
+  </nav>
+  <nav class="topnav">
+    <button class="ghost" id="metricsBtn" type="button">Answer quality</button>
+    <button class="ghost" id="newChatBtn" type="button">New chat</button>
+  </nav>
+</header>
+
+<main class="views">
+  <!-- Ask -->
+  <section id="view-ask" class="view layout" role="tabpanel">
+    <section class="voice-panel" aria-label="Live voice">
+      <div class="orb-wrap">
+        <button id="orb" class="orb" type="button" aria-pressed="false" aria-label="Start live voice">
+          <span class="orb-core"></span><span class="orb-ring"></span>
+        </button>
+      </div>
+      <p id="voiceState" class="voice-state">Voice off</p>
+      <p id="interim" class="interim" aria-live="polite"></p>
+      <div class="voice-meta">
+        <span id="voiceEngine" class="pill">voice: checking…</span>
+        <label class="switch"><input type="checkbox" id="speakToggle" checked> Speak answers</label>
+        <label class="switch" title="With headphones there is no echo, so you can interrupt by speaking"><input type="checkbox" id="headphonesToggle"> Headphones</label>
+      </div>
+      <p class="hint">Click the orb to talk. While the assistant speaks, tap the orb or press Esc to interrupt.</p>
+    </section>
+
+    <section class="chat-panel" aria-label="Conversation">
+      <div id="messages" class="messages" aria-live="polite">
+        <div class="empty" id="emptyState">
+          <h2>Ask about adoption, value and attention</h2>
+          <p>Numbers come only from the governed scorecard; narrative from the initiative charters.</p>
+          <div class="suggestions">
+            <button type="button" class="chip">Which initiatives need attention and why?</button>
+            <button type="button" class="chip">Which initiatives are delivering financial value?</button>
+            <button type="button" class="chip">What is the ROI and payback of the HR Policy Copilot?</button>
+            <button type="button" class="chip">What are the risks for the claims bot?</button>
+            <button type="button" class="chip">Is INIT-07 delivering its benefit hypothesis?</button>
+            <button type="button" class="chip">What is the sponsor's phone number for INIT-02?</button>
+            <button type="button" class="chip">What is the NPS of the Customer Service Chatbot?</button>
+          </div>
+        </div>
+      </div>
+      <form id="askForm" class="composer">
+        <textarea id="question" rows="1" maxlength="1000" placeholder="Ask about the AI portfolio…" aria-label="Question"></textarea>
+        <button id="sendBtn" class="primary" type="submit">Ask</button>
+      </form>
+    </section>
+  </section>
+
+  <!-- Scorecard -->
+  <section id="view-scorecard" class="view page" role="tabpanel" hidden>
+    <div class="page-head">
+      <div><h2>Value scorecard</h2><p class="muted" id="scMeta">Loading…</p></div>
+      <div class="links"><a href="/files/outputs/scorecard.csv" download>scorecard.csv</a></div>
+    </div>
+    <div id="scTiles" class="kpis"></div>
+    <div class="table-wrap"><table id="scTable" class="data"></table></div>
+    <p class="muted">Select an initiative to see how each value was calculated and which data corrections affected it.</p>
+  </section>
+
+  <!-- Weekly report -->
+  <section id="view-report" class="view page" role="tabpanel" hidden>
+    <div class="page-head">
+      <div><h2>Weekly executive report</h2><p class="muted">Tables and statuses are built in code; the notes are written by the writer agent and checked number by number against the scorecard.</p></div>
+      <div class="links"><button id="genReport" class="primary" type="button">Generate this week's report</button></div>
+    </div>
+    <p id="reportLinks" class="links"></p>
+    <article id="reportBody" class="report"><p class="muted">Loading the latest report…</p></article>
+  </section>
+
+  <!-- Data quality -->
+  <section id="view-quality" class="view page" role="tabpanel" hidden>
+    <div class="page-head">
+      <div><h2>Data quality and assumptions</h2><p class="muted">Every correction applied to the source files before the scorecard was calculated, and what it changed.</p></div>
+      <div class="links">
+        <a href="/files/outputs/data_quality_and_assumptions.md" target="_blank" rel="noopener">Definitions, assumptions &amp; client questions</a>
+        <a href="/files/outputs/change_log.md" target="_blank" rel="noopener">change_log.md</a>
+      </div>
+    </div>
+    <div class="table-wrap"><table id="clTable" class="data"></table></div>
+  </section>
+
+  <!-- Charters -->
+  <section id="view-charters" class="view page" role="tabpanel" hidden>
+    <div class="page-head"><div><h2>Initiative charters</h2><p class="muted">Indexed in Azure AI Search by initiative and section. Every passage is scanned by Azure AI Content Safety Prompt Shields; instructions inside charters are treated as data.</p></div></div>
+    <form id="uploadForm" class="upload">
+      <label>Add or replace a charter <input type="file" id="uploadFile" accept=".pdf,.docx,.html,.htm,.md,.txt" required></label>
+      <label>Initiative <select id="uploadInit"></select></label>
+      <button class="primary" type="submit">Upload &amp; index</button>
+      <p id="uploadStatus" class="muted"></p>
+    </form>
+    <div class="table-wrap"><table id="chTable" class="data"></table></div>
+  </section>
+</main>
+
+<dialog id="provDialog" class="sheet">
+  <form method="dialog" class="sheet-head"><h2 id="provTitle">Initiative</h2><button class="ghost" aria-label="Close">✕</button></form>
+  <div id="provBody"></div>
+</dialog>
+
+<dialog id="metricsDialog" class="sheet">
+  <form method="dialog" class="sheet-head"><h2>Answer quality</h2><button class="ghost" aria-label="Close">✕</button></form>
+  <div id="metricsBody"></div>
+</dialog>
+
+<script src="vendor/speech-sdk-1.53.0.min.js" defer></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>
