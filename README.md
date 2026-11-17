@@ -82,10 +82,6 @@ az login
 `AGENT_RUNTIME=local` runs the same agent definitions in-process instead of through Foundry Agent Service.
 `JUDGE_MODE=auto` (the default) skips the LLM judge for numeric answers whose figures were all verified in code.
 
-### Deploy to Azure Container Apps
-```powershell
-.\deploy\deploy.ps1 -ResourceGroup Mockup_2      # publishes agents, builds locally with Docker, pushes to ACR, updates the app
-.\deploy\teardown.ps1 -ResourceGroup Mockup_2    # remove app, environment and registry after the hackathon (ACR ~$0.17/day)
 ```
 Azure for Students specifics are handled in the script:
 - ACR Tasks are not permitted, so the image is built locally.
